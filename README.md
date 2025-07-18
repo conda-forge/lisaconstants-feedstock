@@ -13,11 +13,7 @@ Development: https://gitlab.in2p3.fr/lisa-simulation/constants
 
 Documentation: https://lisa-simulation.pages.in2p3.fr/constants/latest
 
-LISA Constants is a Python package providing values sanctioned by the LISA
-Consortium for physical constants and mission parameters. LISA Constants is
-intended to be consistently used by other pieces of software related to the
-simulation of the instrument, of gravitational wave signals, and others.
-
+LISA Constants is a Python package providing values sanctioned by the LISA Consortium for physical constants and mission parameters. LISA Constants is intended to be consistently used by other pieces of software related to the simulation of the instrument, of gravitational wave signals, and others.
 
 Current build status
 ====================
