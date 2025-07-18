@@ -10,8 +10,8 @@ package:
   version: ${{ version }}
 
 source:
-  url: https://gitlab.in2p3.fr/lisa-simulation/constants/-/archive/v${{ version }}/constants-v${{ version }}.tar.gz
-  sha256: 52dc0bc041286d12ef0a8263eee45ba3a0c8adf37bac1cc54d447b8959d532bd
+  url: https://files.pythonhosted.org/packages/source/${{ name | first }}/${{ name }}/${{ name }}-${{ version }}.tar.gz
+  sha256: 9f8c1d1dce991b8824a96ad1bb939b09ddf2c7f8c0cead5023e1cf2bff9befa5
 
 build:
   number: 2
@@ -19,7 +19,7 @@ build:
   script:
     env:
       SETUPTOOLS_SCM_PRETEND_VERSION_FOR_LISACONSTANTS: ${{ version }}
-    content: ${{ PYTHON }} -m pip install . -vv
+    content: ${{ PYTHON }} -m pip install --use-pep517 .
 
 requirements:
   host:
