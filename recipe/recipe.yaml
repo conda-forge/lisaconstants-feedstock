@@ -14,7 +14,7 @@ source:
   sha256: 8b37c261810d09af964fd4cf1d2012c3b93994a811d90fd0a2d47e00a3c02400
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script:
     env:
@@ -45,7 +45,7 @@ tests:
         - tests/test_constants.py
     requirements:
       run:
-        - python ${{ python_min }}
+        - python >= ${{ python_min }}
         - pip
         - pytest
     script:
